@@ -1,0 +1,180 @@
+/* النمط الأساسي */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://www.adobe.com/eg_ar/cc-shared/fragments/products/firefly/features/text-to-image/media_1398a56d3ece27828ba958c5b97279892e4a13bd1.png?width=750&format=png&optimize=medium'); /* ضع رابط الصورة هنا */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* الحاوية الأساسية */
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    width: 100px; /* تصغير العرض */
+    height: 100px; /* الحفاظ على نسبة الطول والعرض */
+}
+
+
+/* النمط الخاص بالنموذج */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 18px;
+    text-align: right;
+    color: #ffeb3b;
+}
+
+input, select {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* قسم من نحن */
+.about-us, .contact-us {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.about-us h2, .contact-us h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-us p, .contact-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.contact-us ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.contact-us li {
+    margin-bottom: 10px;
+}
+
+.contact-us a {
+    color: #28a745;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-us a:hover {
+    color: #218838;
+    text-decoration: underline;
+}
+
+/* تنسيق للأجهزة المحمولة */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .container, .about-us, .contact-us {
+        padding: 20px;
+    }
+
+    label, input, select, button {
+        font-size: 14px;
+    }
+
+    .about-us h2, .contact-us h2 {
+        font-size: 24px;
+    }
+
+    .about-us p, .contact-us p {
+        font-size: 14px;
+    }
+}
+
+/* تنسيق للأجهزة الكبيرة */
+@media (min-width: 1024px) {
+    body {
+        padding: 50px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .container, .about-us, .contact-us {
+        max-width: 800px;
+        padding: 40px;
+    }
+
+    label, input, select, button {
+        font-size: 18px;
+    }
+
+    .about-us h2, .contact-us h2 {
+        font-size: 32px;
+    }
+
+    .about-us p, .contact-us p {
+        font-size: 18px;
+    }
+}

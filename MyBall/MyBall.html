@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع كرة القدم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- رأس الموقع -->
+    <header class="site-header">
+        <img src="https://png.pngtree.com/png-vector/20240908/ourmid/pngtree-black-and-whtie-football-photo-png-image_13789836.png" alt="لوجو الموقع" class="logo">
+        <h1>My Ball | كورتي</h1>
+    </header>
+
+    <!-- حاوية التسجيل -->
+    <div class="container">
+        <h1>تسجيل للمشاركة في اللعبة</h1>
+        <form id="registerForm">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا" required>
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك" required>
+
+            <label for="position">المركز:</label>
+            <select id="position" name="position" required>
+                <option value="" disabled selected>اختر مركزك</option>
+                <option value="مهاجم">مهاجم</option>
+                <option value="وسط">وسط</option>
+                <option value="دفاع">دفاع</option>
+                <option value="حارس مرمى">حارس مرمى</option>
+            </select>
+
+            <button type="submit">تسجيل</button>
+        </form>
+    </div>
+
+    <!-- قسم من نحن -->
+    <section class="about-us">
+        <h2>من نحن؟</h2>
+        <p>نحن مجموعة من عشاق كرة القدم الذين يسعون لتوفير منصة ممتعة ومثيرة للاعبين للتفاعل والتسجيل في المباريات. نسعى لتحقيق تجربة رياضية مميزة تتضمن التحدي، التعاون، والمرح بين اللاعبين من جميع الأعمار.</p>
+    </section>
+
+    <!-- قسم تواصل معنا -->
+    <section class="contact-us">
+        <h2>تواصل معنا</h2>
+        <p>إذا كنت ترغب في التواصل معنا، يمكنك مراسلتنا عبر:</p>
+        <ul>
+            <li><a href="https://wa.me/message/UOPH5RALZUTNB1" target="_blank">واتساب مباشر</a></li>
+            <li><a href="https://chat.whatsapp.com/DjL1FXYY4Wc8J7NPPqtImO" target="_blank">مجتمعنا على واتساب</a></li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
